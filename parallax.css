@@ -1,0 +1,18 @@
+/* Parallax background layers + scroll reveal. Motion is driven by parallax.js. */
+html{position:relative}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;z-index:-1;pointer-events:none}
+.bg-grid{position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:.1;background-image:radial-gradient(circle,var(--accent) 1px,transparent 1.3px);background-size:28px 28px;-webkit-mask-image:radial-gradient(ellipse at 85% 0%,#000,transparent 75%);mask-image:radial-gradient(ellipse at 85% 0%,#000,transparent 75%)}
+.px{position:absolute;will-change:transform;color:var(--accent)}
+.px svg{display:block;width:100%;height:auto;overflow:visible;fill:none;stroke:currentColor}
+.orbit{top:30px;right:-160px;width:560px;opacity:.17}
+.orbit.small{top:84%;right:auto;left:-70px;width:260px;opacity:.14}
+.pricing{top:26%;left:-120px;width:760px;opacity:.13}
+.arc{top:68%;right:3%;width:420px;opacity:.2}
+.blob{top:46%;right:-90px;width:380px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#ccf477 0,rgba(204,244,119,0) 68%);opacity:.38}
+
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+
+@media(max-width:720px){.orbit{width:320px;right:-130px}.orbit.small{width:170px;left:-60px}.pricing{width:480px;left:-170px}.arc{width:240px}.blob{width:230px;right:-70px}}
+@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.px{will-change:auto}}
+@media print{.bg,.bg-grid{display:none}.js .reveal{opacity:1;transform:none}}

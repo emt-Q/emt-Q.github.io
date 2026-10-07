@@ -1,0 +1,84 @@
+{
+  "about": {
+    "text": "About Me\n\nI'm Emmett (Aoyu) Qin, a CS & Physics student at the University of Illinois Urbana-Champaign, pursuing a B.S. in Computational Physics in the Grainger College of Engineering. I'm interested in quantitative research, machine learning, and aerospace—especially where mathematical models become systems we can test.\n\nI build tools for studying market microstructure and factor investing. My projects explore inventory-aware market making, limit-order-book execution under latency, statistical testing, and out-of-sample evaluation. I'm also a co-founder of Cinder, a multiplayer pixel sword game.\n\nAt Illinois, I work on avionics and control subsystems with Liquid Rocketry at Illinois, research factor investing with the Financial Engineering Club, and collaborate on international consulting projects with ICON.\n\nPreviously, I helped lead nationwide operations at China Thinks Big and served as President of the Junior Achievement club at Shanghai Datong High School.\n\nI'm based in Urbana–Champaign, Illinois. You can reach me at emmettq3@illinois.edu.",
+    "links": [
+      [
+        "View about",
+        "../classic/#about"
+      ]
+    ]
+  },
+  "projects": {
+    "text": "Selected Projects\n\nLimit Order Book Market Making & Statistical Arbitrage\n\nQuantitative trading · Python\n\nAn event-driven order book simulator comparing inventory-aware quoting with a naive baseline under identical informed order flow, with a cointegration-based pairs-trading backtest.\n\nMethods and results\n\nPrice-time priority, reservation-price quoting, position limits, adverse-selection measurement, and rolling OLS hedge ratios.\n\nThe inventory-aware agent reports a session Sharpe of 15.9, versus −13.6 for the naive baseline. This is a controlled simulation using seed 7 and 6,000 ticks, not live trading.\n\nLOB Execution Lab\n\nQuantitative trading · Python\n\nA research backtest of limit-order-book execution on Binance BTCUSDT L2 data, studying when posting limit orders beats taking liquidity once queue position, latency, and adverse selection are modeled.\n\nMethods and results\n\nTick-by-tick book reconstruction, FIFO queue-position fill simulation with symmetric latency, and walk-forward order-flow signals (queue imbalance, microprice, OFI) driving four execution strategies over 200 paired parent orders at 0, 10, 50, and 100 ms.\n\nOn the synthetic stream (seed 7), the signal-driven adaptive strategy reaches a 20-tick markout of +0.20 ticks at zero latency, versus −1.25 for market-taking, but falls to −1.08 at 100 ms. Passive strategies degrade fastest with latency. The reported numbers use synthetic data and a frozen-book assumption, not live trading.\n\nQuant Factor Lab\n\nQuantitative research · Python\n\nA multi-factor pipeline for constructing signals, testing significance, controlling false discoveries, and evaluating long-short portfolios after transaction costs.\n\nMethods and results\n\nNine curated signals are evaluated with IC, Rank-IC, t-tests, and BHY-FDR correction before out-of-sample portfolio evaluation.\n\nSynthetic validation with planted alpha reports a 7.29 Sharpe. The real-data long-short reference reports 0.83 across 20 mega-cap stocks over 2019–2024, with only 15 out-of-sample rebalances.\n\nCinder\n\nGame development · Co-founder · Unity, C#\n\nA top-down pixel sword game for Windows and macOS, currently in development: up to 5v5 team plant-and-defuse matches, free-for-all brawls, and a resource-and-siege mode, played over UDP.\n\nTechnical details\n\nAuthoritative dedicated-server architecture with a fixed 60 Hz simulation, 30 Hz snapshots, client-side prediction and reconciliation, and interpolated remote players, plus adaptive-skill bots that play as coordinated teams.\n\nEdit-mode tests cover combat, collision, rounds, and snapshot encoding, and every push builds the Windows and macOS players in CI. The game has not been released yet.\n\nPerformance figures are reported in the linked repositories. Simulated and historical results do not represent live trading performance.",
+    "links": [
+      [
+        "View projects",
+        "../classic/#work"
+      ],
+      [
+        "Limit Order Book Market Making & Statistical Arbitrage ↗",
+        "https://github.com/emt-Q/lob-market-maker"
+      ],
+      [
+        "LOB Execution Lab ↗",
+        "https://github.com/emt-Q/lob-execution-lab"
+      ],
+      [
+        "Quant Factor Lab ↗",
+        "https://github.com/emt-Q/quant-factor-lab"
+      ],
+      [
+        "Cinder ↗",
+        "https://cinderduel.com/"
+      ]
+    ]
+  },
+  "experience": {
+    "text": "Experience\n\nFlight Control Engineer\n— Sep 2026–present\nLiquid Rocketry at Illinois\n\nDesign, integration, and testing of avionics and control subsystems for liquid-fueled rocket vehicles, working with propulsion, structures, and operations teams from component-level bench tests through integrated vehicle testing.\n\nQuantitative Analyst\n— Sep 2026–present\nFinancial Engineering Club · UIUC\n\nPython-based factor research, signal evaluation, and long-short portfolio strategies.\n\nMember\n— Sep 2026–present\nGTO Illini · Grainger College of Engineering\n\nQuantitative analysis of poker strategy and algorithmic poker-bot development competitions.\n\nInternational Consultant\n— Sep 2026–present\nInternational Consulting Network · ICON\n\nCross-cultural, cross-university consulting for international clients on market entry, competitive analysis, financial forecasting, technology transformation, and human capital, with final deliverables presented live at global conventions.\n\nVice President of Operations\n— Aug 2025–Aug 2026\nChina Thinks Big · National Committee\n\nCo-managed nationwide operations serving 10,000+ students across 500+ schools, including recruitment, regional coordination, and a national outreach system for high-school innovation projects.\n\nCo-founder & Director\n— Sep 2025–Jun 2026\nCTB Alumni Academic Association · China Thinks Big\n\nCo-founded a nationwide academic association for China Thinks Big alumni and organized innovation-project panels connecting students and alumni.\n\nClub President\n— Sep 2023–Jun 2025\nJunior Achievement China · Shanghai Datong High School\n\nDesigned finance workshops and business-analysis panels with professionals from CIB, HSBC, and ChinaAMC.",
+    "links": [
+      [
+        "View experience",
+        "../classic/#experience"
+      ]
+    ]
+  },
+  "education": {
+    "text": "Education & Recognition\n\nUniversity of Illinois Urbana-Champaign\n— 2026–present\nB.S. Computational Physics · Grainger College of Engineering\n\nShanghai Datong High School\n\nCGPA 95.3/100 (Top 5%)\n\nBritish Physics Olympiad — Global Top Gold — 2024\n\nCanadian Association of Physicists — National Silver — 2025",
+    "links": [
+      [
+        "View education",
+        "../classic/#education"
+      ]
+    ]
+  },
+  "skills": {
+    "text": "Technical Interests & Tools\n\nI work with Python, Java, JavaScript, and SQL, using NumPy, pandas, and scikit-learn for research and implementation.\n\nMy interests include market microstructure, statistical testing, computational physics, and flight systems. I enjoy connecting the underlying theory to reproducible code.",
+    "links": [
+      [
+        "View interests & tools",
+        "../classic/#skills"
+      ]
+    ]
+  },
+  "contact": {
+    "text": "Contact\n\nFor research, projects, or a conversation, email emmettq3@illinois.edu.\n\nYou can also find me on LinkedIn and GitHub.",
+    "links": [
+      [
+        "View contact",
+        "../classic/#contact"
+      ],
+      [
+        "emmettq3@illinois.edu",
+        "mailto:emmettq3@illinois.edu"
+      ],
+      [
+        "LinkedIn",
+        "https://www.linkedin.com/in/emmett-qin-b122a6406/"
+      ],
+      [
+        "GitHub",
+        "https://github.com/emt-Q"
+      ]
+    ]
+  }
+}

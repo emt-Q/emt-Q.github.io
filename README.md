@@ -6,9 +6,9 @@ A lightweight, dependency-free GitHub Pages portfolio with two ways to explore:
 - `/classic/`: full profile, projects, experience, education, and contact
 - `/terminal/`: keyboard-accessible portfolio commands
 
-The design takes inspiration from the classic/terminal navigation and green
-academic aesthetic of [Siyuan Gong’s website](https://gooosy.github.io/).
-The layout, styling, and terminal implementation are original to this site.
+The design takes inspiration from the classic/terminal navigation and
+academic layout of [Siyuan Gong’s website](https://gooosy.github.io/).
+The violet palette, layout, styling, and terminal implementation are original to this site.
 
 ## Preview locally
 
